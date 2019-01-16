@@ -318,24 +318,17 @@ section:nth-of-type(even) {
   transition: all .3s ease;
   min-width: 155px;
 }
-.btn:hover {
-  background: none;
-  color: #fff;
-  border-color: #3498db;
-  background-color: #3498db;
-}
+
 .btn-primary {
   border-radius: 25px;
   display: inline-block;
   padding: 14px 28px 13px 28px;
   line-height: 1;
-  border: 2px solid #3498db;
   font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #3498db;
 }
 .btn-primary.btn-filled {
   background: #3498db;
@@ -385,7 +378,38 @@ section:nth-of-type(even) {
 
 .register-butt {
   background-color: #d81331;
+  color: white;
+  position: relative;
+  overflow: hidden !important;;
+  transition: .3s;
+  padding: 2%;
+  text-transform: uppercase;
 }
+
+.register-butt::after {
+  position: absolute;
+  transition: .3s;
+  content: '';
+  height: 120%;
+  width: 0;
+  left: -10%;
+  bottom: 0;
+  -webkit-transform: skewX(15deg);
+  transform: skewX(15deg);
+  z-index: -1;
+  background: #f7f7f7;
+}
+
+.register-butt:hover {
+  color: #5bcaff;
+  background-color: transparent;
+}
+
+.register-butt:hover::after {
+  left: -10%;
+  width: 120%;
+}
+
 .link-text {
   font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
@@ -599,7 +623,11 @@ nav hr {
   display: none !important;
 }
 .top-bar.nav-sticky {
-  background: rgba(255, 255, 255, 0.9);
+/*   background: rgba(255, 255, 255, 0.9); */
+  background: rgb(216, 19, 49);
+  background: rgba(216, 19, 49, 0.9);
+  color: white;
+  
 }
 .top-bar.nav-sticky .nav-menu {
   padding-top: 32px;
@@ -653,10 +681,12 @@ nav hr {
   display: block;
 }
 .overlay-bar.nav-sticky .menu li a {
-  color: #777777;
+/*   color: #777777; */
+  color: white;
 }
 .overlay-bar.nav-sticky .social-icons li a {
-  color: #333333;
+/*   color: #333333; */
+  color: white;
 }
 .overlay-bar.nav-sticky .has-dropdown:after {
   color: #333333;
@@ -2679,7 +2709,7 @@ input[type="submit"] {
   font-weight: 300;
 }
 .countdown-section {
-  width: 23%;
+  width: 12%;
   display: inline-block;
 }
 .countdown-amount {
