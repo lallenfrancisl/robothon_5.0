@@ -269,7 +269,6 @@ $(document).ready(function(){
 	}).mouseleave(function(){$(this).closest('.map-overlay').removeClass('fade-overlay');});
 
 	// Countdown
-console.log("wadkjbdkad")
 	$('.countdown').each(function(){
 		$(this).countdown({until: new Date($(this).attr('data-date'))});
 		console.log("#####" + new Date($(this).attr('data-date')) );

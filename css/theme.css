@@ -382,6 +382,10 @@ section:nth-of-type(even) {
   color: #3498db;
   border-color: rgba(0, 0, 0, 0);
 }
+
+.register-butt {
+  background-color: #d81331;
+}
 .link-text {
   font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
@@ -979,6 +983,12 @@ header.signup:before {
   right: -40px;
   bottom: -80px;
   max-width: 750px;
+}
+
+.hero {
+  position:fixed;
+  height: 110vh;
+  width: auto;
 }
 .hero-divider {
   padding: 160px 0px;
@@ -2348,10 +2358,12 @@ input[type="submit"] {
   width: 100%;
   margin-bottom: 30px;
 }
-.photo-form-wrapper .btn-filled {
+
+/* edited : uncomment it if you don't like it */
+/* .photo-form-wrapper .btn-filled {
   background-color: #e74c3c;
   border-color: #e74c3c;
-}
+} */
 .photo-form-wrapper input:focus {
   outline: none;
 }
@@ -2673,10 +2685,12 @@ input[type="submit"] {
 .countdown-amount {
   display: inline-block;
   margin-bottom: 35px;
+  font-family: 'Bungee Shade', cursive;
+  font-size: 0.9em;
 }
 .countdown-period {
   display: block;
-  font-size: 18px;
+  font-size: 0.38em;
 }
 iframe.mail-list-form {
   display: none !important;
