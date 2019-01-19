@@ -312,11 +312,14 @@ hr {
     font-weight: bold;
     position: relative;
     box-shadow: 11px 12px 0px -3px #de1a1a;
+    box-shadow: 11px 12px 0px -3px #bf0603;
 }
 
 .show-robothon-theme-beta {
     text-align: center;
     font-size: 4rem;
+    width: 60vw;
+    margin: 1rem auto;
 }
 
 
