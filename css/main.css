@@ -35,26 +35,26 @@ header {
 }
 
 .navbar {
-    background: #d81331;
-    color: #e6e6e9;
-    text-transform: uppercase;
-    font-weight: bold;
-    padding: 0;
+    background-color: #d81331;
 }
 
 .navbar-brand {
     height: 4.5rem;
     width: 3.4rem;
-    margin-left: 3vw;
 }
+
+.nav-link,
+.nav-link:hover {
+    color: #e8ebf7;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all 0.2s;
+    border-bottom: 8px solid transparent;
+}
+
 
 .navbar-toggler-icon {
-    color: #e6e6e9;
-}
-
-.navbar-toggler:focus,
-.navbar-toggler {
-    outline: none;
+    color: #e8ebf7;
 }
 
 .hero-main-card {
@@ -70,38 +70,30 @@ header {
 }
 
 .robothon-5-main-logo {
-    overflow: hidden;
     height: 20vh;
-    margin: 2vh 50% 0 50%;
-    transform: translateX(-50%);
+    margin: 5vh auto 0 auto;
 }
 
-.countdown-and-date {
+.time-and-date {
     text-align: center;
+    height: 30vh;
+    margin-top: 2vh
 }
 
 #date {
-    height: 7vh;
-    padding: 1vh;
-    margin-top: 2vh;
     font-size: 1.5em;
     font-weight: 500;
 }
 
 #countdown-title {
-    height: 5vh;
     font-size: 1em;
+    margin-top: 2vh;
 }
 
-#countdown {
-    height: 20vh;
-    font-family: 'Black Ops One', cursive;
-    text-transform: uppercase;
-}
-
-#countdown-text {
+.countdown {
     width: 55%;
     margin: 0 auto;
+    margin-top: 5vh
 }
 
 .countdown-row {
@@ -113,6 +105,8 @@ header {
 .countdown-section {
     width: 25%;
     display: inline-block;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.7em;
 }
 
 .countdown-amount {
@@ -128,45 +122,20 @@ header {
 .register {
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 5vh;
+    margin-top: 5vh;
 }
 
 .register-butt {
-    padding: 0.5em;
-    line-height: 10vh;
     border: 2px solid #e8ebf7;
+    padding: 0.5em;
     transition: all 0.3s;
 }
 
 .register-butt:hover {
+    background-color: #e8ebf7;
     color: #d81331;
-    background-color: #e8ebf7
 }
 
-/* .register:after {
-    background: #e8ebf7;
-    position: absolute;
-    content: '';
-    width: 0;
-    height: 120%;
-    bottom: 0;
-    left: -10%;
-    -webkit-transform: skewX(15deg);
-    transform: skewX(15deg);
-    z-index: -1;
-}
-
-
-.register:hover {
-    cursor: pointer;
-    color: #bf0603;
-}
-
-.register:hover:after {
-    left: -10%;
-    width: 120%;
-}
- */
 .show-details {
     color: #e8ebf7;
     color: #0c090d;
@@ -373,3 +342,55 @@ light reddish: #de1a1a
 whitish: #e8ebf7
 dark reddish: #bf0603
 darker whitish: #e6e6e9 */
+
+@media (min-width: 768px) {
+    .navbar {
+        background-color: transparent;
+    }
+
+
+    .nav-link:hover {
+        border-bottom-color: #e8ebf7;
+        color: #e8ebf7;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        position: absolute;
+        width: 100%;
+        z-index: 9999;
+    }
+
+    .hero-main-card {
+        margin-top: 6rem;
+    }
+
+    .navbar-toggler {
+        outline: none;
+    }
+    
+    .navbar-toggler:focus {
+        outline: none;
+    }
+    
+    .navbar {
+        border: 2px solid #e8ebf7;
+    }
+}
+
+@media (max-width: 850px) {
+    .countdown {
+        width: 70%
+    }
+}
+
+@media (max-width: 535px) {
+    .countdown {
+        width: 100%;
+    }
+
+    .countdown-period {
+        font-size: 0.35em;
+    }
+}

@@ -29,6 +29,10 @@ let logoAspectRatio = 1.88;
 
 robothonLogoCard.css('width', robothonLogoCard.height() * logoAspectRatio);
 
+let robothonHeroLogo = $('.robothon-5-main-logo');
+// width / height
+let logoAspectRatio = 1.88;
+robothonHeroLogo.css('width', robothonHeroLogo.height() * 1.88 + 'px');
 
 
 
