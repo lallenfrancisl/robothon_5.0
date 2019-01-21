@@ -4,7 +4,6 @@ body {
     margin: 0 !important;
     background-color: #e8ebf7;
     font-family: 'Raleway', sans-serif;
-    transition: all 0.3s;
 }
 
 #body-background {
@@ -46,17 +45,12 @@ header {
     width: 3.4rem;
 }
 
-.navbar-nav>li>a {
-    color: #e8ebf7;
-    border-bottom: 10px solid transparent;
-}
-
-.navbar-nav>li>a:hover{
-    border-bottom: 10px solid #e8ebf7;
-}
-
 .navbar-toggler-icon {
-    color: #e6e6e9
+    color: #e6e6e9;
+}
+
+.navbar-toggler:focus, .navbar-toggler{
+    outline: none;
 }
 
 .hero-main-card {
@@ -86,6 +80,7 @@ header {
     padding: 1vh;
     margin-top: 2vh;
     font-size: 1.5em;
+    font-weight: 500;
 }
 
 #countdown-title {
@@ -135,6 +130,7 @@ header {
     padding: 0.5em;
     line-height: 10vh;
     border: 2px solid #e8ebf7;
+    transition: all 0.3s;
 }
 
 .register-butt:hover {
@@ -311,12 +307,25 @@ hr {
         background: transparent;
         padding-left: 5vw;
     }
+
+
+    .navbar-nav>li>a {
+        color: #e8ebf7;
+        border-bottom: 10px solid transparent;
+        transition: all 0.3s;
+    }
+
+    .navbar-nav>li>a:hover {
+        border-bottom: 10px solid #e8ebf7;
+    }
+
 }
 
 @media (max-width: 640px) {
     .countdown-period {
         font-size: 0.35em;
     }
+
     #countdown-text {
         width: 80%;
     }
@@ -326,6 +335,7 @@ hr {
     #countdown-text {
         width: 95%;
     }
+
     .countdown-period {
         font-size: 0.3em;
     }
