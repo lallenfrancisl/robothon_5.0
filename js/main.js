@@ -1,10 +1,10 @@
 /**
  * Countdown timer
  * TODO:
- * - If you are reading this, then you are SPECIAL!! please consider improving the timer
- * - Separate controls for days, hours, etc
+ * - improve the timer
+ * - hide days, hours etc, leave it to html
  */
-$('.countdown').each(function(){
+$('#countdown-text').each(function(){
     $(this).countdown({until: new Date($(this).attr('data-date'))});
     // console.log("#####" + new Date($(this).attr('data-date')) );
 });
@@ -16,13 +16,18 @@ $('.countdown').each(function(){
 let browserWindow = $(window)
 let scrollPercent = 0;
 
-browserWindow.on('scroll', function(){
-	let s = $(window).scrollTop(),
-		d = $(document).height(),
-		c = $(window).height();
+// browserWindow.on('scroll', function(){
+// 	let s = $(window).scrollTop(),
+// 		d = $(document).height(),
+// 		c = $(window).height();
   
-    scrollPercent = (s / (d - c)) * 100;
-  });
+//     scrollPercent = (s / (d - c)) * 100;
+//   });
+
+let robothonLogoCard = $('.robothon-5-main-logo');
+let logoAspectRatio = 1.88;
+
+robothonLogoCard.css('width', robothonLogoCard.height() * logoAspectRatio);
 
 
 
