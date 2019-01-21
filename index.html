@@ -12,19 +12,19 @@
     <link rel="stylesheet" href="css/lib/bootstrap4.2.1.min.css">
     <link rel="stylesheet" href="/css/lib/jquery.countdown.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Press+Start+2P" rel="stylesheet">
+    <script src="js/lib/font-awesome-5.6.3.all.min.js"></script>
 </head>
 
 <body>
     <header>
         <h1 class="sr-only">Robothon 5.0 from College of Engineering Chengannur</h1>
         <div id="body-background"></div>
-        <nav class="navbar navbar-expand-lg">
-            <!-- logo and most of the images will be loaded later with javascript, hence the placeholder image. Now why a placeholder image see this it's interesting(MIND BLOWN!!!!): https://humanwhocodes.com/blog/2009/11/30/empty-image-src-can-destroy-your-site/ -->
-            <a class="navbar-brand" href="#"><img src="img/placeholder-img.png" alt="robothon 5.0 logo"></a>
+        <nav class="navbar navbar-expand-md">
+            <a class="navbar-brand" href="#"><img src="img/logo_only_Light.png" alt="robothon 5.0 white logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon fas fa-bars"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -50,23 +50,17 @@
 
         <div class="row no-gutters justify-content-center">
             <h2 class="sr-only">Hero of website containing core details and registration link</h2>
-            <div class="col-12 col-md-7">
-                <article>
-                    <section>
-                        <div class="hero-main-card">
-                            <div class="robothon-5-main-logo"><img src="img/placeholder-img.png" alt="Robothon logo with robothon written on the side"></div>
-                            <div class="time-and-date">
-                                <section>
-                                    <h3 class="sr-only">Date and time and countdown</h3>
-                                    <div id="date">February 22, 23, 24</div>
-                                    <h4 id="countdown-title">Robothon Starts in</h4>
-                                    <div class="countdown" data-date="Feb 22 2019"></div>
-                                </section>
-                            </div>
-                            <div class="register-butt"><a href="#" target="_blank">Registration Opening Soon</a></div>
-                        </div>
-                    </section>
-                </article>
+            <div class="col-12 col-md-10 col-lg-8">
+                <div class="hero-main-card">
+                    <div class="robothon-5-main-logo"><img src="img/robo5logo_2_stripped.png" alt="Robothon logo with robothon written on the side"></div>
+                    <div class="time-and-date">
+                        <h3 class="sr-only">Date and time and countdown</h3>
+                        <div id="date">February 22, 23, 24</div>
+                        <h4 id="countdown-title">Robothon Starts in</h4>
+                        <div class="countdown" data-date="Feb 22 2019"></div>
+                    </div>
+                    <div class="register"><a class="register-butt" href="#" target="_blank">Registration Opening Soon</a></div>
+                </div>
             </div>
         </div>
     </header>
@@ -128,60 +122,60 @@
             </article>
         </div> -->
         <div id="about-beta">
-            <article>
-                <h3 class="sr-only">welcome to robothon 5.0</h3>
-                <div class="show-details-beta">
-                    <h4>
-                        <p class="sr-only">
-                            Hello, fellow humans
-                        </p>
-                        <img id="hello" src="./img/HELLO.svg" alt="hello,">
-                        <img id="fellow-humans" src="./img/FELLOW-HUMANS.svg" alt="fellow humans">
-                    </h4>
-                    <div class="show-details-beta-content">
-                        <div class="row no-gutters">
-                            <div class="col-12 col-md-6 details-beta">
-                                <!-- <div class="details-beta"> -->
-                                <!-- <div class="content-container"> -->
-                                <!-- <p> -->
-                                <p>
-                                    Unleash the power of Golems!!! Here comes Robothon V5!! Continue glavanizing the
-                                    next generation of innovators with your bots. At the dawn of 2k19, we are unveiling
-                                    new roads to the plethora of opportunities and innovations in the world of
-                                    artificial intelligence towards the greater good of our species!! Be recognized @
-                                    the technical extravaganza of IEEE SB CEC. And, you may invent the next super
-                                    amazing thing that changes our world! Want a chance at this awesome opportunity?
-                                </p>
-                                <!-- </p> -->
-                                <!-- <p> -->
-                                <!-- </p> -->
-                                <!-- </div> -->
-                            </div>
+
+            <h3 class="sr-only">welcome to robothon 5.0</h3>
+            <div class="show-details-beta">
+                <h4>
+                    <p class="sr-only">
+                        Hello, fellow humans
+                    </p>
+                    <img id="hello" src="./img/HELLO.svg" alt="hello,">
+                    <img id="fellow-humans" src="./img/FELLOW-HUMANS.svg" alt="fellow humans">
+                </h4>
+                <div class="show-details-beta-content">
+                    <div class="row no-gutters">
+                        <div class="col-12 col-md-6 details-beta">
+                            <!-- <div class="details-beta"> -->
+                            <!-- <div class="content-container"> -->
+                            <!-- <p> -->
+                            <p>
+                                Unleash the power of Golems!!! Here comes Robothon V5!! Continue glavanizing the
+                                next generation of innovators with your bots. At the dawn of 2k19, we are unveiling
+                                new roads to the plethora of opportunities and innovations in the world of
+                                artificial intelligence towards the greater good of our species!! Be recognized @
+                                the technical extravaganza of IEEE SB CEC. And, you may invent the next super
+                                amazing thing that changes our world! Want a chance at this awesome opportunity?
+                            </p>
+                            <!-- </p> -->
+                            <!-- <p> -->
+                            <!-- </p> -->
                             <!-- </div> -->
-                            <div class="col-12 col-md-6 details-beta">
+                        </div>
+                        <!-- </div> -->
+                        <div class="col-12 col-md-6 details-beta">
+                            <p>
+                                The challenge of this hackathon is that each participating team must design,
+                                fabricate and program a robot within a 24 hour time period. The main goal of
+                                Robothon 5.0 is to offer a platform for robotic enthusiasts to showcase their
+                                talent and acquire new skills. Furthermore, we also believe that the intriguing
+                                backdrop of a hackathon will give birth to a few prompt and ingenious ideas.
+                            </p>
+                        </div>
+                        <div class="col-12">
+                            <div class="show-robothon-theme-beta">
+                                <h4>THEME</h4>
                                 <p>
-                                    The challenge of this hackathon is that each participating team must design,
-                                    fabricate and program a robot within a 24 hour time period. The main goal of
-                                    Robothon 5.0 is to offer a platform for robotic enthusiasts to showcase their
-                                    talent and acquire new skills. Furthermore, we also believe that the intriguing
-                                    backdrop of a hackathon will give birth to a few prompt and ingenious ideas.
+                                    ROBOTS FOR HUMANITY
                                 </p>
                             </div>
-                            <div class="col-12">
-                                <div class="show-robothon-theme-beta">
-                                    <h4>THEME</h4>
-                                    <p>
-                                        ROBOTS FOR HUMANITY
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- <div id="black-robot-waving">
+                        </div>
+                        <!-- <div id="black-robot-waving">
                                 <img src="temporary_stuff/black-robot.svg" alt="a robot saying hello">
                             </div> -->
-                        </div>
                     </div>
                 </div>
-            </article>
+            </div>
+
         </div>
     </main>
     <script src="js/lib/jquery-3.3.1.min.js"></script>

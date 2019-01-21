@@ -6,10 +6,6 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-div {
-    /*     overflow: hidden; */
-}
-
 #body-background {
     position: absolute;
     top: 0;
@@ -36,22 +32,17 @@ p {
 }
 
 header {
-    /* background: linear-gradient(to right, #de1a1a, #de1a1a 50%, #e8ebf7 50%, #e8ebf7); */
     background: none;
     height: 100vh;
 }
 
 .navbar {
-    background-color: transparent;
-    height: 5.7rem;
+    background-color: #d81331;
 }
 
 .navbar-brand {
-    height: 100%;
-}
-
-.navbar-brand img {
-    background: center / contain no-repeat url("../img/logo_only_Light.png");
+    height: 4.5rem;
+    width: 3.4rem;
 }
 
 .nav-link {
@@ -65,31 +56,14 @@ header {
 
 .nav-link:hover {
     border-bottom-color: #e8ebf7;
-    /*     background-color: #e8ebf7; */
-    /*     color: #de1a1a; */
     color: #e8ebf7;
 }
 
-.navbar-toggler {
-    /*     background-color: red; */
-
+.navbar-toggler-icon {
+    color: #e8ebf7;
 }
 
 navbar-toggler-icon {}
-
-/* APPEND CLASSES OR IDS OR ELEMENTS HERE TO CENTER THEM HORIZONTALLY */
-.time-and-date,
-.robothon-5-main-logo,
-.countdown,
-.register-butt {
-    margin: 0 50%;
-    transform: translateX(-50%);
-}
-
-/* ########### APPEND CLASSES OR IDS OR ELEMENTS HERE TO HAVE FULL PAGE HEIGHT ############ */
-.show-details {
-    height: 100vh;
-}
 
 .hero-main-card {
     background: #de1a1a center / cover no-repeat url("../img/techno-bg.svg");
@@ -108,30 +82,30 @@ navbar-toggler-icon {}
 }
 
 .robothon-5-main-logo {
-    overflow: hidden;
-    max-width: 30vw;
-    min-width: 20vw;
-    margin-top: 3%;
-    background: center / contain no-repeat url("../img/robo5logo_2_stripped.png");
+    height: 20vh;
+    margin: 5vh auto 0 auto;
 }
 
 .time-and-date {
-    width: 40%;
     text-align: center;
+    height: 30vh;
+    margin-top: 2vh
 }
 
 #date {
-    font-size: 1.5rem;
+    font-size: 1.5em;
+    font-weight: 500;
 }
 
 #countdown-title {
-    margin: 10% 0 0 0;
-    font-size: 1.2rem;
+   font-size: 1em;
+   margin-top: 2vh;
 }
 
 .countdown {
-    width: 100%;
-    text-align: center;
+    width: 55%;
+    margin: 0 auto;
+    margin-top: 5vh
 }
 
 .countdown-row {
@@ -143,6 +117,8 @@ navbar-toggler-icon {}
 .countdown-section {
     width: 25%;
     display: inline-block;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.7em;
 }
 
 .countdown-amount {
@@ -155,41 +131,22 @@ navbar-toggler-icon {}
     font-size: 0.38em;
 }
 
-.register-butt {
-    width: 35%;
+.register {
     text-align: center;
     text-transform: uppercase;
+/*     margin-bottom: 5vh; */
+    margin-top: 5vh;
+}
+
+.register-butt {
     border: 2px solid #e8ebf7;
-    padding: 1%;
-    position: relative;
-    overflow: hidden;
-    transition: .3s;
-    margin-top: 4%;
+    padding: 0.5em;
+    transition: all 0.3s;
 }
-
-.register-butt:after {
-    background: #e8ebf7;
-    position: absolute;
-    transition: .3s;
-    content: '';
-    width: 0;
-    height: 120%;
-    bottom: 0;
-    left: -10%;
-    -webkit-transform: skewX(15deg);
-    transform: skewX(15deg);
-    z-index: -1;
-}
-
 
 .register-butt:hover {
-    cursor: pointer;
-    color: #bf0603;
-}
-
-.register-butt:hover:after {
-    left: -10%;
-    width: 120%;
+    background-color: #e8ebf7;
+    color: #d81331;
 }
 
 .show-details {
@@ -330,3 +287,37 @@ light reddish: #de1a1a
 whitish: #e8ebf7
 dark reddish: #bf0603
 darker whitish: #e6e6e9 */
+
+@media (min-width: 768px) {
+    .navbar {
+        background-color: transparent;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        position: absolute;
+        width: 100%;
+        z-index: 9999;
+    }
+    
+    .hero-main-card {
+        margin-top: 6rem;
+    }
+}
+
+@media (max-width: 850px) {
+    .countdown {
+        width: 70%
+    }
+}
+
+@media (max-width: 535px) {
+    .countdown {
+        width: 100%;
+    }
+    
+    .countdown-period {
+        font-size: 0.35em;
+    }
+}
