@@ -4,6 +4,7 @@ body {
     margin: 0 !important;
     background-color: #e8ebf7;
     font-family: 'Raleway', sans-serif;
+    transition: all 0.3s;
 }
 
 #body-background {
@@ -45,8 +46,13 @@ header {
     width: 3.4rem;
 }
 
-.navbar-item>.nav-link {
+.navbar-nav>li>a {
     color: #e8ebf7;
+    border-bottom: 10px solid transparent;
+}
+
+.navbar-nav>li>a:hover{
+    border-bottom: 10px solid #e8ebf7;
 }
 
 .navbar-toggler-icon {
@@ -90,9 +96,10 @@ header {
 #countdown {
     height: 20vh;
     font-family: 'Black Ops One', cursive;
+    text-transform: uppercase;
 }
 
-#countdown-text  {
+#countdown-text {
     width: 55%;
     margin: 0 auto;
 }
@@ -121,7 +128,6 @@ header {
 .register {
     text-align: center;
     text-transform: uppercase;
-    transition: .3s;
     margin-bottom: 5vh;
 }
 
@@ -129,7 +135,6 @@ header {
     padding: 0.5em;
     line-height: 10vh;
     border: 2px solid #e8ebf7;
-    transition: all 0.3s;
 }
 
 .register-butt:hover {
@@ -140,7 +145,6 @@ header {
 /* .register:after {
     background: #e8ebf7;
     position: absolute;
-    transition: .3s;
     content: '';
     width: 0;
     height: 120%;
@@ -239,7 +243,7 @@ hr {
     border: 2px solid #d81331;
     overflow: hidden;
     position: relative;
-/*     height: 100vh; */
+    /*     height: 100vh; */
     width: 100%;
     margin: 0;
     padding: 1%;
@@ -272,7 +276,8 @@ hr {
     margin-top: 6vh
 }
 
-.details-beta>p, .show-robothon-theme-beta {
+.details-beta>p,
+.show-robothon-theme-beta {
     background-color: #e6e6e9;
     width: 95%;
     line-height: 2.5;
@@ -294,21 +299,47 @@ hr {
 
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-    
-    .navbar {
-        background: transparent;
-        padding-left: 5vw;
-    }
+@media (min-width: 992px) {
     .navbar-brand {
         height: 6.6rem;
         width: 5rem;
     }
 }
 
+@media (min-width: 768px) {
+    .navbar {
+        background: transparent;
+        padding-left: 5vw;
+    }
+}
+
+@media (max-width: 640px) {
+    .countdown-period {
+        font-size: 0.35em;
+    }
+    #countdown-text {
+        width: 80%;
+    }
+}
+
 @media (max-width: 540px) {
     #countdown-text {
-        width: 70%;
+        width: 95%;
+    }
+    .countdown-period {
+        font-size: 0.3em;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        position: absolute;
+        width: 100%;
+        z-index: 9999;
+    }
+
+    .hero-main-card {
+        margin-top: 7rem;
     }
 }
 
