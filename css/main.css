@@ -45,25 +45,19 @@ header {
     width: 3.4rem;
 }
 
-.nav-link {
+.nav-link,
+.nav-link:hover {
     color: #e8ebf7;
     font-weight: 700;
     text-transform: uppercase;
-    transition-property: all;
-    transition-duration: 0.2s;
+    transition: all 0.2s;
     border-bottom: 8px solid transparent;
 }
 
-.nav-link:hover {
-    border-bottom-color: #e8ebf7;
-    color: #e8ebf7;
-}
 
 .navbar-toggler-icon {
     color: #e8ebf7;
 }
-
-navbar-toggler-icon {}
 
 .hero-main-card {
     background: #de1a1a center / cover no-repeat url("../img/techno-bg.svg");
@@ -98,8 +92,8 @@ navbar-toggler-icon {}
 }
 
 #countdown-title {
-   font-size: 1em;
-   margin-top: 2vh;
+    font-size: 1em;
+    margin-top: 2vh;
 }
 
 .countdown {
@@ -134,7 +128,6 @@ navbar-toggler-icon {}
 .register {
     text-align: center;
     text-transform: uppercase;
-/*     margin-bottom: 5vh; */
     margin-top: 5vh;
 }
 
@@ -226,7 +219,7 @@ hr {
     border: 2px solid #d81331;
     overflow: hidden;
     position: relative;
-/*     height: 100vh; */
+    /*     height: 100vh; */
     width: 100%;
     margin: 0;
     padding: 1%;
@@ -259,7 +252,8 @@ hr {
     margin-top: 6vh
 }
 
-.details-beta>p, .show-robothon-theme-beta {
+.details-beta>p,
+.show-robothon-theme-beta {
     background-color: #e6e6e9;
     width: 95%;
     line-height: 2.5;
@@ -292,6 +286,12 @@ darker whitish: #e6e6e9 */
     .navbar {
         background-color: transparent;
     }
+
+
+    .nav-link:hover {
+        border-bottom-color: #e8ebf7;
+        color: #e8ebf7;
+    }
 }
 
 @media (max-width: 768px) {
@@ -300,9 +300,21 @@ darker whitish: #e6e6e9 */
         width: 100%;
         z-index: 9999;
     }
-    
+
     .hero-main-card {
         margin-top: 6rem;
+    }
+
+    .navbar-toggler {
+        outline: none;
+    }
+    
+    .navbar-toggler:focus {
+        outline: none;
+    }
+    
+    .navbar {
+        border: 2px solid #e8ebf7;
     }
 }
 
@@ -316,7 +328,7 @@ darker whitish: #e6e6e9 */
     .countdown {
         width: 100%;
     }
-    
+
     .countdown-period {
         font-size: 0.35em;
     }
