@@ -40,4 +40,4 @@ $(window).resize(function () {
 /**
  * fit titles to parent containers
  */
-$('.content-title>span').fitText(0.5);
+// $('.content-title>span').fitText(0.5);

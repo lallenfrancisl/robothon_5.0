@@ -32,8 +32,16 @@ p {
     text-decoration: none;
 }
 
-.full-screen-height {
+#register, #about {
     min-height: 100vh;
+}
+
+span.avoid-wrapping {
+    display: inline-block;
+}
+
+.emphasize {
+    color: #d81331;
 }
 
 header {
@@ -165,28 +173,84 @@ header {
     width: 1px;
 }
 
+.first-content,
+.second-content {
+    position: relative;
+    width: 80%;
+    padding: 6% 5% 6% 6%;
+    box-shadow: 5px 6px 0px 0px #D81331;
+    margin: 6rem 0 1rem 0;
+    min-height: 60vh;
+}
+
+.first-content {}
+
+.second-content {}
+
+.content-title-1,
+.content-title-2 {
+    position: absolute;
+    float: left;
+    font-size: 5rem;
+}
+
+.content-title {
+    position: relative;
+    width: 80%;
+}
+
+.content-title-1 {
+    right: 0;
+}
+
+.position-at-edge {
+    position: absolute;
+    right: 0;
+}
+
+.content-title-2 {
+    transform-origin: left;
+    transform: translateX(3.5rem) rotate(90deg);
+}
+
+.first-content.registration-details {
+    line-height: 2.5;
+    padding: 2%;
+    text-align: left;
+}
+
+.price-detail {
+    text-align: center;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+}
+
+
+/*
+*   ##############MEDIA QUERIES START HERE################
+*/
+
+
+
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     .navbar-brand {
         height: 5rem;
         width: 3.8rem;
     }
-    
-    .first-content, .second-content {
+
+    .first-content,
+    .second-content {
         position: relative;
         width: 80%;
         padding: 6% 5% 6% 6%;
         box-shadow: 5px 6px 0px 0px #D81331;
         margin: 6rem 0 1rem 0;
     }
-    
-    .first-content {
-         
-    }
 
-    .second-content {
-        
-    }
+    .first-content {}
+
+    .second-content {}
 
     .content-title-1,
     .content-title-2 {
@@ -204,10 +268,6 @@ header {
         right: 0;
     }
 
-    /*     .content-title-2 {
-        transform-origin: left;
-        right: -50%;
-    } */
     .position-at-edge {
         position: absolute;
         right: 0;
@@ -216,6 +276,14 @@ header {
     .content-title-2 {
         transform-origin: left;
         transform: translateX(3.5rem) rotate(90deg);
+    }
+}
+
+@media (max-width: 992px) {
+
+    .content-title-1,
+    .content-title-2 {
+        font-size: 4rem;
     }
 }
 
