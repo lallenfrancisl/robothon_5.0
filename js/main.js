@@ -4,9 +4,11 @@
  * - improve the timer
  * - hide days, hours etc, leave it to html
  */
-$('.countdown').each(function(){
-    $(this).countdown({until: new Date($(this).attr('data-date'))});
-    console.log("#####" + new Date($(this).attr('data-date')) );
+$('.countdown').each(function () {
+    $(this).countdown({
+        until: new Date($(this).attr('data-date'))
+    });
+    console.log("#####" + new Date($(this).attr('data-date')));
 });
 
 /**
@@ -20,15 +22,22 @@ let scrollPercent = 0;
 // 	let s = $(window).scrollTop(),
 // 		d = $(document).height(),
 // 		c = $(window).height();
-  
+
 //     scrollPercent = (s / (d - c)) * 100;
 //   });
 
 let robothonHeroLogo = $('.robothon-5-main-logo');
-// width / height
+// <width> / <height>
 let logoAspectRatio = 1.88;
 robothonHeroLogo.css('width', robothonHeroLogo.height() * 1.88 + 'px');
 
+$(window).resize(function () {
+    setTimeout(function () {
+        robothonHeroLogo.css('width', robothonHeroLogo.height() * 1.88 + 'px');
+    }, 1000);
+});
 
-
-
+/**
+ * fit titles to parent containers
+ */
+$('.content-title>span').fitText(0.5);
