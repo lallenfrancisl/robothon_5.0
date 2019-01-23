@@ -15,20 +15,20 @@ $('.countdown').each(function () {
  * For tracking the scroll percentage of the webpage
  * Thank you Phil Ricketts at stackoverflow for this https://stackoverflow.com/a/8028584/6882980
  */
-let browserWindow = $(window)
-let scrollPercent = 0;
+var browserWindow = $(window)
+var scrollPercent = 0;
 
 // browserWindow.on('scroll', function(){
-// 	let s = $(window).scrollTop(),
+// 	var s = $(window).scrollTop(),
 // 		d = $(document).height(),
 // 		c = $(window).height();
 
 //     scrollPercent = (s / (d - c)) * 100;
 //   });
 
-let robothonHeroLogo = $('.robothon-5-main-logo');
+var robothonHeroLogo = $('.robothon-5-main-logo');
 // <width> / <height>
-let logoAspectRatio = 1.88;
+var logoAspectRatio = 1.88;
 robothonHeroLogo.css('width', robothonHeroLogo.height() * 1.88 + 'px');
 
 $(window).resize(function () {
