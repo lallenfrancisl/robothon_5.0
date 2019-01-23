@@ -102,6 +102,12 @@ header {
     margin: 5vh auto 0 auto;
 }
 
+#college-name {
+    text-align: center;
+    margin-top: 1vh;
+    font-size: 0.75rem;
+}
+
 .time-and-date {
     text-align: center;
     height: 30vh;
@@ -134,7 +140,8 @@ header {
     width: 25%;
     display: inline-block;
     font-family: 'Press Start 2P', cursive;
-    font-size: 0.7em;
+    font-family: 'Black Ops One', cursive;
+    font-size: 1em;
 }
 
 .countdown-amount {
@@ -222,6 +229,7 @@ header {
 .labs-image {
     height: 25rem;
     width: 90%;
+    border: 2px solid #d81331;
 }
 
 .first-content.registration-details {
@@ -443,6 +451,10 @@ footer {
 
     .countdown-period {
         font-size: 0.3em;
+    }
+    .content-title-1,
+    .content-title-2 {
+        font-size: 3rem;
     }
 }
 
