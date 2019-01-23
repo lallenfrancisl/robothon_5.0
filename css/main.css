@@ -44,6 +44,18 @@ span.avoid-wrapping {
     color: #d81331;
 }
 
+/* Mozilla based browsers */
+::-moz-selection {
+    background-color: #d81331;
+    color: #242424;
+}
+
+/* Works in Safari */
+::selection {
+    background-color: #d81331;
+    color: #242424;
+}
+
 header {
     background: none;
     height: 100vh;
@@ -225,6 +237,51 @@ header {
     font-weight: bold;
 }
 
+footer {
+    background: #d81331;
+    color: #e8ebf7;
+    margin-top: 8rem;
+}
+
+.contact-details h2 {
+    text-align: center;
+    margin: 3rem 0;
+    font-weight: 400;
+}
+
+.contact-details {
+    position: relative;
+    top: -5rem;
+    background: #242424;
+    padding: 15px;
+    text-align: center;
+    font-weight: normal;
+    margin: 0 15px 0 15px;
+}
+
+.contact {
+    margin-top: 3rem;
+}
+
+.contact>h3 {
+    font-size: 1.3rem;
+}
+.contact-card {
+/*     background: #e8ebf7; */
+/*     color: #242424; */
+    margin-bottom: 2em;
+    padding: 1rem;
+    line-height: 1;
+}
+
+.contact-card>h4 {
+    font-size: 1.0rem;
+    margin-bottom: 2.5rem;
+}
+
+.contact-card>p:nth-of-type(1) {
+    
+}
 
 /*
 *   ##############MEDIA QUERIES START HERE################
