@@ -458,6 +458,13 @@ footer {
     }
 }
 
+@media (max-width: 320px) {
+    .content-title-1,
+    .content-title-2 {
+        font-size: 2rem;
+    }
+}
+
 @media (max-width: 768px) {
     .navbar {
         position: absolute;
