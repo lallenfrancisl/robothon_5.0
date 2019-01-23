@@ -237,6 +237,27 @@ header {
     font-weight: bold;
 }
 
+.price-detail>h5 {
+    font-size: 1rem;
+}
+
+.map-holder {
+/*     position: relative; */
+    /* width: 90%; */
+}
+.map-holder {
+    
+}
+.map-holder>.content-title {
+    width: 90%;
+}
+.map-holder>iframe {
+    border: 0;
+    width: 90%;
+    height: 70vh;
+    margin-top: 6rem;
+}
+
 footer {
     background: #d81331;
     color: #e8ebf7;
