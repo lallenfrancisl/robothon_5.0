@@ -27,11 +27,12 @@ var scrollPercent = 0;
 //   });
 
 var robothonHeroLogo = $('.robothon-5-main-logo');
+var imageSlideShow = $('.first-content.image-slider');
 // <width> / <height>
 var logoAspectRatio = 1.88;
 robothonHeroLogo.css('width', robothonHeroLogo.height() * 1.88 + 'px');
 
-$(window).resize(function () {
+browserWindow.resize(function () {
     setTimeout(function () {
         robothonHeroLogo.css('width', robothonHeroLogo.height() * 1.88 + 'px');
     }, 1000);
@@ -76,3 +77,38 @@ $(window).resize(function () {
   /**
    * Scroll animation code ends here
    */
+/**
+ * Image slider animation code
+ */
+  var sliderImages = document.querySelectorAll('.image-slider>.slider-image');
+  var sliderCurtain = document.querySelector('.image-slider>.curtain');
+  var imageSlider = anime.timeline({
+      easing: 'linear',
+      autoplay: false,
+      loop: true
+  });
+  
+  for (var i = 0; i < sliderImages.length; ++i) {
+      imageSlider
+          .add({
+              targets: sliderImages[i],
+              opacity: ['0', '1'],
+              duration: 1,
+              delay: 200
+          })
+          .add({
+              targets: sliderCurtain,
+              width: ['100%', '0%'],
+              duration: 200,
+              endDelay: 5000
+          })
+          .add({
+              targets: sliderCurtain,
+              width: ['0%', '100%'],
+              duration: 200
+          });
+  }
+
+  $(function () {
+      imageSlider.play();
+  });
