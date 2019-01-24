@@ -1,6 +1,3 @@
-/*     font-family: 'Major Mono Display', monospace;
-    font-family: 'Megrim', cursive;
- */
 html,
 body {
     padding: 0 !important;
@@ -31,11 +28,11 @@ p {
     text-decoration: none;
 }
 
-#register,
+/* #register,
 #about {
     min-height: 100vh;
 }
-
+ */
 span.avoid-wrapping {
     display: inline-block;
 }
@@ -99,7 +96,7 @@ header {
 
 .robothon-5-main-logo {
     height: 20vh;
-    margin: 5vh auto 0 auto;
+    margin: 3vh auto 0 auto;
 }
 
 #college-name {
@@ -182,13 +179,70 @@ header {
     padding: 6% 5% 6% 6%;
     -webkit-box-shadow: 5px 6px 0px 0px #D81331;
     box-shadow: 5px 6px 0px 0px #D81331;
-    min-height: 60vh;
+    /*! min-height: 60vh; */
 }
 
 .content-title {
     text-transform: uppercase;
     font-family: 'Megrim', cursive;
     margin-top: 2.5rem;
+}
+
+#theme {
+/*     height: 1rem */
+    padding: 10%;
+    margin: 0;
+}
+
+#theme>h4 {
+    width: 100%;
+}
+
+#theme>div {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    width: 100%;
+}
+
+#prizes>.content-title {
+    width: 100%;
+}
+
+.first-content.prize-information {
+    background: #d81331;
+    text-align: center;
+    color: #e8ebf7;
+    width: 100%;
+    -webkit-box-shadow: 5px 6px 0px 0px #242424;
+    box-shadow: 5px 6px 0px 0px #242424;
+}
+
+.first-content.prize-information>h5 {
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+}
+
+.first-content.prize-information>h5>span {
+    padding: 2%;
+}
+
+.prize-position {
+    font-size: 1.5rem;
+    margin-bottom: 1rem
+}
+
+.prize-amount {
+    margin-bottom: 5rem;
+    font-weight: bold;
+}
+
+.internship-offer {
+    font-weight: bold;
+}
+
+.internship-offer>span {
+    padding: 1%;
 }
 
 .generic-info-card {
@@ -228,7 +282,7 @@ header {
 
 .labs-image {
     height: 25rem;
-    width: 90%;
+    width: 98%;
     border: 2px solid #d81331;
 }
 
@@ -307,6 +361,49 @@ footer {
     margin-bottom: 2.5rem;
 }
 
+#on-media>.content-title {
+    width: 100%;
+}
+
+.outer {
+}
+
+
+/* Thank you https://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php */
+
+.inner {
+    border: 10px solid #d81331;
+    position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+
+.inner>iframe {
+    position: absolute;
+	top: 0;
+	left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.connector {
+    background: #d81331;
+    width: 10px;
+    height: 10vh;
+    position: relative;
+    left: 50%;
+}
+
+.description {
+    background: #242424;
+    border: 10px solid #d81331;
+    color: #e8ebf7;
+    padding: 3%;
+    line-height: 3;
+    text-align: left;
+}
+
 /*
 *   ##############MEDIA QUERIES START HERE################
 */
@@ -358,6 +455,10 @@ footer {
         width: 80%;
         margin-top: 0;
     }
+    
+    .content-title + div {
+        margin-top: 6rem;
+    }
 
     .content-title-1 {
         right: 0;
@@ -370,11 +471,6 @@ footer {
         transform: translateX(3.5rem) rotate(90deg);
     }
 
-    .content-title {
-        position: relative;
-        width: 80%;
-    }
-
     .position-at-edge {
         position: absolute;
         right: 0;
@@ -383,7 +479,7 @@ footer {
 
     .first-content,
     .second-content {
-        margin: 6rem 0 5rem 0;
+        margin: 0 0 2rem 0;
         width: 80%;
     }
 
@@ -456,6 +552,9 @@ footer {
     .content-title-2 {
         font-size: 3rem;
     }
+    #theme>div {
+    font-size: 2rem;
+    }
 }
 
 @media (max-width: 320px) {
@@ -463,6 +562,8 @@ footer {
     .content-title-2 {
         font-size: 2rem;
     }
+    
+    
 }
 
 @media (max-width: 768px) {
