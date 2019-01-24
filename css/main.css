@@ -220,11 +220,12 @@ header {
 
 .first-content.prize-information>h5 {
     margin-bottom: 3rem;
-    font-size: 2.5rem;
+    height: 3rem;
 }
 
-.first-content.prize-information>h5>span {
-    padding: 2%;
+.first-content.prize-information>h5>.fa-trophy {
+    height: 100%;
+    width: 100%;
 }
 
 .prize-position {
