@@ -84,11 +84,11 @@ browserWindow.resize(function () {
   var sliderCurtain = document.querySelector('.image-slider>.curtain');
   var imageSlider = anime.timeline({
       easing: 'linear',
-      autoplay: false,
-      loop: true
+      loop: true,
+      autplay: true
   });
   
-  for (var i = 0; i < sliderImages.length; ++i) {
+  for (let i = 0; i < sliderImages.length; ++i) {
       imageSlider
           .add({
               targets: sliderImages[i],
@@ -98,17 +98,34 @@ browserWindow.resize(function () {
           })
           .add({
               targets: sliderCurtain,
-              width: ['100%', '0%'],
+              height: ['100%', '0%'],
               duration: 200,
-              endDelay: 5000
+              endDelay: 4000
           })
           .add({
               targets: sliderCurtain,
-              width: ['0%', '100%'],
+              height: ['0%', '100%'],
               duration: 200
           });
   }
 
-  $(function () {
-      imageSlider.play();
-  });
+/**
+ * quote slider animation cpde
+ */
+var quoteSlider = document.querySelector('.slider');
+var quoteSliderAnimation = anime.timeline({
+    loop: true,
+    autoplay: true,
+    direction: 'alternate'
+});
+
+for (let i = 0; i < (quoteSlider.childElementCount - 1); ++i) {
+    quoteSliderAnimation
+        .add({
+            targets: quoteSlider,
+            translateX: -100 * (i + 1) + 'vw',
+            delay: 1000,
+            endDelay: 1000,
+            easing: 'easeOutExpo'
+        })
+}

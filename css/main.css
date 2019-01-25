@@ -179,7 +179,6 @@ header {
     padding: 6% 5% 6% 6%;
     -webkit-box-shadow: 5px 6px 0px 0px #D81331;
     box-shadow: 5px 6px 0px 0px #D81331;
-    /*! min-height: 60vh; */
 }
 
 .content-title {
@@ -189,7 +188,7 @@ header {
 }
 
 #theme {
-/*     height: 1rem */
+    /*     height: 1rem */
     padding: 10%;
     margin: 0;
 }
@@ -342,15 +341,16 @@ header {
 .inner {
     border: 10px solid #d81331;
     position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
-	height: 0;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    padding-top: 25px;
+    height: 0;
 }
 
 .inner>iframe {
     position: absolute;
-	top: 0;
-	left: 0;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
 }
@@ -370,6 +370,42 @@ header {
     padding: 3%;
     line-height: 3;
     text-align: left;
+}
+
+.quote-slider {
+    min-height: 60vh;
+    overflow: hidden;
+    margin: 4rem 0;
+}
+
+.slider {
+    width: 1000vw;
+}
+
+.quote {
+    display: inline-block;
+    background: #242424;
+    color: #e8ebf7;
+    text-align: center;
+    width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding: 2rem;
+    transform-origin: center;
+    overflow: hidden;
+}
+
+
+.quote-quote {
+    line-height: 3;
+    font-size: 1.2rem
+}
+
+.quote-author {
+    margin-top: 2rem;
+    text-transform: uppercase;
+    color: #d81331;
+    font-weight: bold;
 }
 
 .map-holder>.content-title {
@@ -477,8 +513,8 @@ footer {
         width: 80%;
         margin-top: 0;
     }
-    
-    .content-title + div {
+
+    .content-title+div {
         margin-top: 6rem;
     }
 
@@ -511,21 +547,21 @@ footer {
         -webkit-transform: translateX(3rem) rotate(90deg);
         transform: translateX(3rem) rotate(90deg);
     }
-    
+
     .labs-container .first-content {
         width: 90%;
         padding: 3% 2% 1% 3%;
     }
-    
+
     .labs-container .content-title {
         width: 90%;
     }
-    
+
 
     .map-holder>.content-title {
         width: 90%;
     }
-    
+
     .map-holder>iframe {
         border: 0;
         width: 90%;
@@ -556,10 +592,10 @@ footer {
     .hero-main-card {
         margin-top: 7rem;
     }
-    
+
     #registration-robot {
-    display: none;
-    }   
+        display: none;
+    }
 }
 
 @media (max-width: 540px) {
@@ -570,22 +606,25 @@ footer {
     .countdown-period {
         font-size: 0.3em;
     }
+
     .content-title-1,
     .content-title-2 {
         font-size: 3rem;
     }
+
     #theme>div {
-    font-size: 2rem;
+        font-size: 2rem;
     }
 }
 
 @media (max-width: 320px) {
+
     .content-title-1,
     .content-title-2 {
         font-size: 2rem;
     }
-    
-    
+
+
 }
 
 @media (max-width: 768px) {
